@@ -1,9 +1,10 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import App, { getState } from './App';
+import * as rtl from '@testing-library/react';
+import '@testing-library/jest-dom';
+import Dashboard from './components/Dashboard';
+import Display from './components/Display';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders without crashing', () => {
+  rtl.render(<App/>);
 });
