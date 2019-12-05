@@ -5,6 +5,6 @@ import '@testing-library/jest-dom';
 import Dashboard from './components/Dashboard';
 import Display from './components/Display';
 
-test('renders without crashing', () => {
+it('renders without crashing', () => {
   rtl.render(<App/>);
 });
