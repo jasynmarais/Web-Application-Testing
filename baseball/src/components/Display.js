@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-const Display = () => {
+const Display = props => {
     return (
         <div className='scoreboard'>
-            <h2>Balls: </h2>
-            <h2>Strikes: </h2>
+            <h2>Balls: {props.balls}</h2>
+            <h2>Strikes: {props.strikes}</h2>
         </div>
     )
 }
